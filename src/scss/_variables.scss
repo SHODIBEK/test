@@ -1,0 +1,23 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+// COLORS
+:root {
+    --green-color: #118976;
+    --pink-color: #ff2c2c;
+    --grey-color: #333;
+    --darkgrey-color: #828282;
+    --lightgreen-color: #089C84;
+    --inter-font: 'Inter', sans-serif;
+    --gotham-font: 'Gotham', sans-serif;
+}
+
+// FONTS
+
+// z-index
+
+$zindex-dropdown:          1000 !default;
+$zindex-sticky:            1020 !default;
+$zindex-fixed:             1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;

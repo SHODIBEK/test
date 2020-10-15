@@ -1,0 +1,50 @@
+extends pug/base
+
+append vars
+	- title = 'Главная страница'
+	- meta.description = 'Описание страницы'
+	- link.icon = './favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#1E1E1E'
+	- defaultLink = 'javascript:void(0);'
+	- boxs = ['Убивает все известные вирусы и микробы', 'Защищает поверхности от микробов 48 часов', 'Подходит для любых поверхностей']
+block content
+	.content
+		.container
+			a(href="/").logo
+				img(src="logo.png", alt="logo" width="200" height="64")
+			.wrapper
+				.wrapper__block
+					.wrapper__info
+						h1.wrapper__title
+							| 100% защита дома<br> от вирусов<br> и микробов
+						ul.wrapper__lists
+							each item in boxs
+								li.wrapper__list
+									+svg('check')
+									span=item
+						img(src="images/content/1.png", alt="").wrapper__img
+					.wrapper__form.form
+						h2.form__title
+							| Специальное предложение!
+						p.form__desc
+							| Специальная цена
+						span.form__price
+							| 149<font>j</font>*
+						form(action="/" method="POST")#form
+							.form-group
+								select
+									option(value="Россия") Россия
+									option(value="Украина") Украина
+									option(value="Беларусь") Беларусь
+							.form-group
+								label(for="name")
+									input(type="text" name="name" id="name" placeholder="Имя")
+							.form-group
+								label(for="tel")
+									input(type="text" name="tel" id="tel" placeholder="Телефон")
+							.form__btn
+								button(type="submit").btn
+									| Заказать
+						span.form__tooltip
+							| * при заказе набора
