@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Описание страницы">
+		<meta name="theme-color" content="#1E1E1E">
+		<meta name="format-detection" content="telephone=no">
+		<title>Главная страница</title>
+		<link rel="icon" href="./favicon.ico">
+		<link rel="stylesheet" href="./css/main.css?v=1602793724730">
+	</head>
+	<body>
+		<div class="content">
+			<div class="container"><a class="logo" href="/"><img src="logo.png" alt="logo" width="200" height="64"></a>
+				<div class="wrapper">
+					<div class="wrapper__block">
+						<div class="wrapper__info">
+							<h1 class="wrapper__title">100% защита дома<br> от вирусов<br> и микробов</h1>
+							<ul class="wrapper__lists">
+								<li class="wrapper__list">
+									<svg>
+										<use xlink:href="./images/sprites.svg#check"></use>
+									</svg><span>Убивает все известные вирусы и микробы</span>
+								</li>
+								<li class="wrapper__list">
+									<svg>
+										<use xlink:href="./images/sprites.svg#check"></use>
+									</svg><span>Защищает поверхности от микробов 48 часов</span>
+								</li>
+								<li class="wrapper__list">
+									<svg>
+										<use xlink:href="./images/sprites.svg#check"></use>
+									</svg><span>Подходит для любых поверхностей</span>
+								</li>
+							</ul><img class="wrapper__img" src="images/content/1.png" alt="">
+						</div>
+						<div class="wrapper__form form">
+							<h2 class="form__title">Специальное предложение!</h2>
+							<p class="form__desc">Специальная цена</p><span class="form__price">149<font>j</font>*</span>
+							<form action="/" method="POST" id="form">
+								<div class="form-group">
+									<select>
+										<option value="Россия">Россия</option>
+										<option value="Украина">Украина</option>
+										<option value="Беларусь">Беларусь</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="name">
+										<input type="text" name="name" id="name" placeholder="Имя">
+									</label>
+								</div>
+								<div class="form-group">
+									<label for="tel">
+										<input type="text" name="tel" id="tel" placeholder="Телефон">
+									</label>
+								</div>
+								<div class="form__btn">
+									<button class="btn" type="submit">Заказать</button>
+								</div>
+							</form><span class="form__tooltip">* при заказе набора</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/vendor.js?v=1602793724730"></script>
+		<script src="./js/main.js?v=1602793724730"></script>
+	</body>
+</html>
